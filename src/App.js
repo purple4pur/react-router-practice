@@ -8,7 +8,8 @@ import {
 import {
   Home,
   Article,
-  About
+  About,
+  ArticleDetail
 } from './views'
 
 export default class App extends Component {
@@ -32,6 +33,7 @@ export default class App extends Component {
           <Route component={Home} path="/" exact />
           <Route component={Article} path="/article" exact />
           <Route component={About} path="/about" exact />
+          <Route component={ArticleDetail} path="/article/:id" exact />
           <Redirect from="/" to="/"/> 
           {/* 在这里Redirect的作用相当于switch的default，把其余情况重定向到首页 */}
         </Switch>
