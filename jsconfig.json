@@ -1,0 +1,7 @@
+// 使项目可以引用绝对路径 ( https://create-react-app.dev/docs/importing-a-component/#absolute-imports )
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": ["src"]
+}

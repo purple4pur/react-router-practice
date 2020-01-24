@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import { NavLink as Link } from 'react-router-dom'
+import { Header } from 'components'
 
 export default class Article extends Component {
   render() {
     return (
       <>
+        <Header />
         <nav>
           <ul>
             <li>
