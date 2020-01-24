@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import {
   Route,
   Switch,
-  Link
+  Link,
+  Redirect
 } from 'react-router-dom'
 import {
   Home,
@@ -31,6 +32,8 @@ export default class App extends Component {
           <Route component={Home} path="/" exact />
           <Route component={Article} path="/article" exact />
           <Route component={About} path="/about" exact />
+          <Redirect from="/" to="/"/> 
+          {/* 在这里Redirect的作用相当于switch的default，把其余情况重定向到首页 */}
         </Switch>
       </>
     )
