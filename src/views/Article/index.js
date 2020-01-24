@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Link, Route, Switch, Redirect } from 'react-router-dom'
-import ArticleDetail from './ArticleDetail'
+import { NavLink as Link } from 'react-router-dom'
 
 export default class Article extends Component {
   render() {
